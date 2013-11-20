@@ -22,9 +22,35 @@
 
   <body>
 
-    <%= yield %>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Library</h1>
+        <h2>the books collecting app</h2>
+      </div>
+    </div>
 
-    
+    <div class="row">
+      <nav>
+        <ul>
+          <li class="large-4 columns menu"><%= link_to 'Books', books_path %></li>
+          <li class="large-4 columns menu"><%= link_to 'Categories', categories_path %></li>
+          <li class="large-4 columns menu">Zaloguj się</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div class="row">
+      <footer class="large-12 columns">
+        FOOTER
+      </footer>
+    </div>
+
     <%= javascript_include_tag "application" %>
   </body>
 </html>
