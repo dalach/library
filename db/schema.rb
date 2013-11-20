@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131118150411) do
+ActiveRecord::Schema.define(version: 20131120170636) do
 
   create_table "books", force: true do |t|
     t.string   "title"
@@ -19,6 +19,12 @@ ActiveRecord::Schema.define(version: 20131118150411) do
     t.integer  "year"
     t.boolean  "rented"
     t.boolean  "reserved"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories", force: true do |t|
+    t.string   "category_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

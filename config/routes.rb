@@ -1,4 +1,6 @@
 Biblioteka::Application.routes.draw do
+  resources :categories
+
   resources :books
 
   # The priority is based upon order of creation: first created -> highest priority.
